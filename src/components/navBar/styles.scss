@@ -1,0 +1,133 @@
+:root{
+    --backgroung-color : #937993;
+    --main-color : #000000;
+    --navbar-background-color : rgb(128, 126, 126);
+    --subtext-color : #ffffff;
+  }
+  
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+  html{
+    font-size: 60%;
+    height: 100%;
+  }
+  
+  body{
+    background-color: var(--backgroung-color);
+    height: 100%;
+  }
+  
+  #root{
+    height: 100%;
+  }
+  
+  .navbar{
+    background-color: var(--navbar-background-color);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  
+  .navbar-container{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: inherit;
+      padding: 0px 20px;
+      flex: 1;
+  }
+  
+  .navbar-container-logo{
+        color : var(--main-color);
+        cursor: pointer;
+  }
+  
+  .navbar-container-menu{
+    display: flex;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .nav-icon{
+    display: none;
+  }
+  
+  .navbar-container-menu-item{
+    line-height: 1.5px;
+    margin-right: 4rem;
+    font-size: 1.7rem;
+    position: relative;
+  }
+  
+  .navbar-container-menu-item ::after{
+    content: '';
+    display: block;
+    background: transparent;
+    height: 2px;
+    width: 0px;
+    position: absolute;
+    bottom: -15px;
+  }
+  
+  .navbar-container-menu-item:hover ::after{
+    width: 110%;
+    background: var(--main-color);
+  }
+  
+  .navbar-container-menu-item-link{
+    text-decoration: none;
+    color: var(--main-color);
+    padding: 1rem;
+  }
+  
+  @media only screen and (max-width: 768px)
+  {
+    .navbar-container-menu
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      position: absolute;
+      top: 80px;
+      left: -110%;
+      opacity: 1;
+      transition: all 0.5 ease;
+    }
+  
+      .navbar-container-menu.active{
+      background: var(--backgroung-color);
+      left: 0px;
+      opacity: 1;
+    }
+  
+    .navbar-container-menu-item {
+      margin-right: 0;
+      margin-bottom: 8rem;
+      padding:12px;
+    }
+  
+    .navbar-container-menu-item.active ::after{
+      height: 0.2px;
+      bottom: -1px;
+    }
+  
+    .navbar-container-menu-item.active:hover ::after{
+      width: 0.5px;
+      background: var(--main-color);
+    }
+  
+    .nav-icon{
+      display: block;
+      cursor: pointer;
+      color: var(--main-color);
+      padding-right: 20px;
+    }
+  }
