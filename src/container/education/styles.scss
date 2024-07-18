@@ -1,0 +1,33 @@
+:root {
+    --background-color: #937993;
+    --main-color: #000000;
+    --navbar-background-color: rgb(128, 126, 126);
+    --subtext-color: #ffffff;
+  }
+  
+  .education-info {
+    color: var(--main-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .education-field {
+    margin: 0 0 0.5rem 0; /* Small space below the title */
+    font-size: 2.8rem;
+  }
+
+  .education-college{
+    margin: 0 0 0.5rem 0; /* Small space below the title */
+    font-size: 2.8rem;
+  }
+
+  .experience-date{
+    font-size: 1.5rem;
+  }
+  
+  .education-percentage {
+    margin: 0.5rem 0; /* Space between paragraphs */
+    font-size: 2rem;
+  }
