@@ -63,7 +63,7 @@ const Projects = () => {
                 <br />
               </React.Fragment>
             ))}</p>
-            <p><strong className='subheading'>Link:</strong> <a href={project.link} target="_blank" rel="noopener noreferrer">{project.link}</a></p>
+            <p><strong className='subheading'>Github Link:</strong> <a href={project.link} target="_blank" rel="noopener noreferrer">{project.link}</a></p>
             <p><strong className='subheading'>Skills Used:</strong> {project.skills.join(', ')}</p>
           </div>
         ))}
