@@ -14,8 +14,16 @@ const data = [
         to : '/about'
     },
     {
-        label : 'CONTACT',
-        to : '/contact'
+        label : 'EDUCATION',
+        to : '/education'
+    },
+    {
+        label : 'EXPERIENCE',
+        to : '/experience'
+    },
+    {
+        label : 'SKILLS',
+        to : '/skills'
     },
     {
         label : 'PROJECTS',
@@ -26,8 +34,8 @@ const data = [
         to : '/resume'
     },
     {
-        label : 'SKILLS',
-        to : '/skills'
+        label : 'CONTACT',
+        to : '/contact'
     }
 ]
 
@@ -45,7 +53,7 @@ const Navbar = () =>
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to = {'/'} className='navbar-container-logo'>
-                    <FaReact fontSize={30} />
+                    {/*<FaReact fontSize={30} />*/}
                     </Link>
                 </div>
 
