@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.scss'; // Assuming styles.scss includes the CSS for both components
+import './styles.scss'; 
 import PageHeaderContent from '../../components/pageHeaderContent';
 
 const educationData = [
