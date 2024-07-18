@@ -1,33 +1,45 @@
-:root {
-    --background-color: #937993;
-    --main-color: #000000;
-    --navbar-background-color: rgb(128, 126, 126);
-    --subtext-color: #ffffff;
-  }
-  
-  .education-info {
-    color: var(--main-color);
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    padding: 20px;
-  }
-  
-  .education-field {
-    margin: 0 0 0.5rem 0; /* Small space below the title */
-    font-size: 2.8rem;
-  }
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  list-style: none;
+}
 
-  .education-college{
-    margin: 0 0 0.5rem 0; /* Small space below the title */
-    font-size: 2.8rem;
-  }
+.timeline-item {
+  padding-left: 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
 
-  .experience-date{
-    font-size: 1.5rem;
-  }
-  
-  .education-percentage {
-    margin: 0.5rem 0; /* Space between paragraphs */
-    font-size: 2rem;
-  }
+.timeline-item-content{
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+
+.institute{
+  font-size: 2.5rem;
+}
+
+.degree{
+  font-size: 2rem;
+}
+
+.date{
+  font-size: 1.2rem;
+}
+
+.percentage{
+  font-size: 1.2rem;
+}
+
+.timeline-item-content .circle {
+  width: 10px;
+  height: 10px;
+  background: #0c0c0c;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: -30px;
+}
+
