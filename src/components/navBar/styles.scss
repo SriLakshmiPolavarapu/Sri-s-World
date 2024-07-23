@@ -33,10 +33,10 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: fixed; /* Make navbar fixed */
+  position: fixed; 
   width: 100%;
   top: 0;
-  z-index: 1000; /* Ensure it stays on top of other content */
+  z-index: 1000; 
 }
 
 .navbar-container {
@@ -102,7 +102,7 @@ body {
     left: -110%;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 1000; /* Ensure it stays on top of other content */
+    z-index: 1000; 
   }
 
   .navbar-container-menu.active {
@@ -114,7 +114,7 @@ body {
   .navbar-container-menu-item {
     margin-right: 0;
     margin-bottom: 8rem;
-    padding: 5px;
+    padding: 10px;
   }
 
   .navbar-container-menu-item.active::after {
@@ -135,16 +135,14 @@ body {
   }
 }
 
-/* Add padding to the content to avoid overlap with the fixed navbar */
 .content {
-  padding-top: 80px; /* Adjust based on your navbar height */
+  padding-top: 80px; 
 }
 
 .content.with-navbar {
-  padding-top: calc(80px + 100vh); /* Push content down when navbar is expanded */
+  padding-top: calc(80px + 100vh); 
 }
 
-/* Heading with dashed underline */
 .heading {
   font-size: 2.4rem;
   color: var(--main-color);

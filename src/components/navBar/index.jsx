@@ -11,7 +11,6 @@ const data = [
   { label: 'EXPERIENCE', to: '/experience' },
   { label: 'SKILLS', to: '/skills' },
   { label: 'PROJECTS', to: '/projects' },
-  { label: 'RESUME', to: '/resume' },
   { label: 'CONTACT', to: '/contact' },
 ];
 
@@ -20,12 +19,12 @@ const Navbar = () => {
 
   const handleToggleIcon = () => {
     setToggleIcon(!toggleIcon);
-    document.body.classList.toggle('with-navbar', !toggleIcon); // Toggle body class
+    document.body.classList.toggle('with-navbar', !toggleIcon); 
   };
 
   const handleLinkClick = () => {
     setToggleIcon(false);
-    document.body.classList.remove('with-navbar'); // Remove class when a link is clicked
+    document.body.classList.remove('with-navbar'); 
   };
 
   return (
