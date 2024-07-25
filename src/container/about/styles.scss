@@ -1,41 +1,102 @@
+:root {
+  --background-color: #937993;
+  --main-color: #000000;
+  --navbar-background-color: rgb(128, 126, 126);
+  --subtext-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 60%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  height: 100%;
+  overflow-y: scroll; 
+  padding-top: 80px; 
+  position: relative;
+}
+
+#root {
+  height: 100%;
+}
+
 .image-section {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    height: 100vh;           
-    padding: 0 10px;         
-    box-sizing: border-box;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-top: 0; 
+  position: relative;
+  z-index: 1;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 5px 9px rgba(238, 236, 236, 0.1);
+  max-width: 300px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  margin-right: 30px;
+  text-align: left;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+.info {
+  text-align: left;
+  padding: 20px;
+  max-width: 800px;
+  line-height: 1.7;
+  box-sizing: border-box;
+  margin-top: 30px; 
+}
+
+.info p {
+  color: #000000;
+  font-size: 2rem;
+  margin-top: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .image-section {
+    flex-direction: column; 
+    align-items: center;    
+    z-index: 1;           
+    padding-top: 0px;      
+    height: auto;         
   }
-  
+
   .image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    box-shadow: 0 5px 9px rgba(238, 236, 236, 0.1);
-    max-width: 300px;        
-    width: 100%;
-    transition: transform 0.3s ease-in-out;
-    margin-right: 30px;      
-    text-align: left;
+    margin-top: 20px;       
+    margin-right: 0;
+    z-index: 1;
   }
-  
-  .image:hover {
-    transform: scale(1.05);  
-  }
-  
+
   .info {
-    text-align: left;        
-    padding: 20px;           
-    max-width: 800px;      
-    line-height: 1.7;        
-    box-sizing: border-box;  
-    margin-top: 100px;
+    padding: 5px;           
+    max-width: 100%;        
+    z-index: 1;
+    margin-top: 30px;       
   }
-  
+
   .info p {
-    color: #000000;
-    font-size: 2rem;      
-    margin-top: 0.5px;     
+    font-size: 2rem;        
+    z-index: 1;
   }
-  
+}

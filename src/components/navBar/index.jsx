@@ -44,7 +44,7 @@ const Navbar = () => {
                 to={item.to}
                 onClick={handleLinkClick}
               >
-                {item.label}
+                <b>{item.label}</b>
               </Link>
             </li>
           ))}
