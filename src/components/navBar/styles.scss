@@ -101,7 +101,7 @@ body {
 }
 
 .navbar-container-menu-item-link:hover {
-  color: var(--background-color);
+  color: var(--main-color);
 }
 
 @media only screen and (max-width: 890px) {
@@ -144,7 +144,7 @@ body {
   }
 
   .navbar-container-menu-item-link:hover {
-    color: var(--subtext-color);
+    color: var(--main-color)
   }
 }
 

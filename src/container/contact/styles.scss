@@ -1,0 +1,81 @@
+.contactInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    position: relative;
+}
+
+form{
+    max-width: 600px;
+    width: 100%;
+    padding: 25px 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 25px;
+    font-size: 2rem;
+}
+
+form .input-box{
+    margin-top: 20px;
+}
+
+.input-box .field{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgb(6, 6, 6);
+    outline: none;
+    border-radius: 15px;
+    padding: 15px;
+    color: rgb(4, 4, 4);
+    margin-top: 8px;
+    font-size: 1.5rem;
+}
+
+.input-box .field-mess{
+    height: 200px;
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: rgb(192, 191, 191);
+}
+
+
+form button{
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    color: rgb(5, 4, 4);
+    margin-top: 25px;
+    font-size: 1.5rem;
+}
+
+.social-icons {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    color: #333;
+    font-size: 4rem;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #0762C8; // LinkedIn brand color on hover
+    }
+
+    &:first-child:hover {
+        color: #f9f6f6; // GitHub brand color on hover
+    }
+}
