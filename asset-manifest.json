@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Sri-s-World/static/css/main.7162dfcf.css",
-    "main.js": "/Sri-s-World/static/js/main.3ebeb6e5.js",
-    "static/media/pic.jpeg": "/Sri-s-World/static/media/pic.0d8987de80caec99275f.jpeg",
-    "index.html": "/Sri-s-World/index.html",
-    "main.7162dfcf.css.map": "/Sri-s-World/static/css/main.7162dfcf.css.map",
-    "main.3ebeb6e5.js.map": "/Sri-s-World/static/js/main.3ebeb6e5.js.map"
+    "main.css": "/static/css/main.7162dfcf.css",
+    "main.js": "/static/js/main.a13fcf4a.js",
+    "static/media/pic.jpeg": "/static/media/pic.0d8987de80caec99275f.jpeg",
+    "index.html": "/index.html",
+    "main.7162dfcf.css.map": "/static/css/main.7162dfcf.css.map",
+    "main.a13fcf4a.js.map": "/static/js/main.a13fcf4a.js.map"
   },
   "entrypoints": [
     "static/css/main.7162dfcf.css",
-    "static/js/main.3ebeb6e5.js"
+    "static/js/main.a13fcf4a.js"
   ]
 }
