@@ -33,6 +33,11 @@ form .input-box{
     font-size: 1.5rem;
 }
 
+.input-box .field::placeholder{
+    color: black;
+    opacity: 1;
+}
+
 .input-box .field-mess{
     height: 200px;
     resize: none;
@@ -40,6 +45,11 @@ form .input-box{
     padding: 10px;
     font-size: 1.5rem;
     background-color: rgb(192, 191, 191);
+}
+
+.input-box .field-mess::placeholder{
+    color: black;
+    opacity: 1;
 }
 
 
