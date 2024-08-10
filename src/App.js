@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, Router } from 'react-router-dom';
 import Home from './container/home';
 import About from './container/about';
 import Skill from './container/skills';
@@ -23,7 +23,6 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
-
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
