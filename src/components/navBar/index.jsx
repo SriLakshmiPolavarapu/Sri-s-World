@@ -41,8 +41,8 @@ const Navbar = () => {
               <Link
                 className='navbar-container-menu-item-link'
                 to={item.to}
-                onClick={handleLinkClick}
-              >
+                onClick={handleLinkClick}>
+                  
                 <b>{item.label}</b>
               </Link>
             </li>

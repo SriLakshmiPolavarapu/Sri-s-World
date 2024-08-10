@@ -14,32 +14,34 @@ const Home = () => {
   };
 
   return (
-    <section id="home" className='home'>
-      <div className='home-text-wrapper'>
-        <h1>
-          Hello! 
-          <br />
-          I'm Sri Lakshmi Polavarapu
-          <br />
-          Student at Portland State University
-        </h1>
-      </div>
-
-      <Animate
-        play
-        duration={1.5}
-        delay={1}
-        start={{
-          transform: 'translateX(500px)'
-        }}
-        end={{
-          transform: 'translateX(-100px)'
-        }}>
-        <div className="home-contact-me">
-          <button onClick={handleNavigateToContactMePage}> Contact Info</button>   
+    <div className="page-container">
+      <section id="home" className="home">
+        <div className="home-text-wrapper">
+          <h1>
+            Hello! 
+            <br />
+            I'm Sri Lakshmi Polavarapu
+            <br />
+            Student at Portland State University
+          </h1>
         </div>
-      </Animate>
-    </section>
+
+        <Animate
+          play
+          duration={1.5}
+          delay={1}
+          start={{ transform: 'translateX(500px)' }}
+          end={{ transform: 'translateX(-100px)' }}
+        >
+          <div className="home-contact-me">
+            <button onClick={handleNavigateToContactMePage}> Contact Info</button>   
+          </div>
+        </Animate>
+      </section>
+      <div className="fixed-bottom">
+        <i className='copyrite'>&copy; 2024 Sri Lakshmi Polavarapu</i>
+      </div>
+    </div>
   );
 };
 
