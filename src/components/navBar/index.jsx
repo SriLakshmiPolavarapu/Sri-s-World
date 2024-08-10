@@ -33,9 +33,6 @@ const Navbar = () => {
     <div>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-container-logo'>
-            {/* Add your logo or leave this empty */}
-          </Link>
         </div>
 
         <ul className={`navbar-container-menu ${toggleIcon ? 'active' : ''}`}>

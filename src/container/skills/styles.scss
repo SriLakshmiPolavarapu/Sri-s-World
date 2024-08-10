@@ -1,3 +1,12 @@
+:root {
+  --background-color: #937993;
+  --main-color: #000000;
+  --navbar-background-color: rgb(128, 126, 126);
+  --subtext-color: #ffffff;
+  --linkedin-color: #0762C8;
+  --skills-color: #bebdbd;
+}
+
 .skills-content {
     padding: 20px;
   }
@@ -23,7 +32,7 @@
   }
   
   .skills-category ul li {
-    background: #bebdbd;
+    background: var(--skills-color);
     padding: 5px 10px;
     margin: 5px 0;
     border-radius: 5px;

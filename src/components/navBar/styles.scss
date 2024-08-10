@@ -48,13 +48,6 @@ body {
   align-items: center;
 }
 
-.navbar-container-logo {
-  color: var(--main-color);
-  font-size: 2rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 .navbar-container-menu {
   display: flex;
   list-style: none;
@@ -187,6 +180,10 @@ form button {
   &:first-child:hover {
     color: var(--subtext-color); 
   }
+}
+
+.extracurricular-list{
+  padding: 20px;
 }
 
 @media (max-width: 768px) {

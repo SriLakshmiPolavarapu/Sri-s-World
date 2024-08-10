@@ -1,7 +1,5 @@
 import React from 'react';
 import Swal from 'sweetalert2';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './styles.scss';
 
 const Contact = () => {
@@ -59,16 +57,6 @@ const Contact = () => {
 
                 <button type='submit'>Send Message</button>
             </form>
-            {/* Social Icons 
-            <div className='social-icons'>
-                <a href='https://github.com/' target='_blank' rel='noopener noreferrer' className='icon'>
-                    <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a href='https://linkedin.com/' target='_blank' rel='noopener noreferrer' className='icon'>
-                    <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-             </div>*/}
-
         </div>
     );
 };
