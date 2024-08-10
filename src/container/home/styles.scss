@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    overflow: hidden; /* Ensure no overflow beyond viewport */
+    overflow: hidden; 
   }
   
   .home-text-wrapper {
@@ -46,14 +46,9 @@
   }
   
   .home-contact-me {
-    margin-top: 500px;
-    align-items: center;
     display: flex;
     justify-content: center;
-    position: absolute; /* Adjust positioning to ensure it remains visible */
-    bottom: 10%; /* Adjust based on preference */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+    margin-top: 320px; 
   }
   
   .home-contact-me button {
@@ -65,6 +60,7 @@
     font-size: 1.5rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    max-width: 100%; 
   }
   
   .home-contact-me button:hover {
@@ -78,7 +74,14 @@
     }
   
     .home-contact-me {
-      transform: scale(0.9); /* Adjust scaling factor as needed */
+      margin-top: 10px; 
+      justify-content: center; 
+      flex-direction: column; 
+    }
+  
+    .home-contact-me button {
+      width: 80%; 
+      margin: 0 auto; 
     }
   }
   
@@ -89,7 +92,10 @@
     }
   
     .home-contact-me {
-      transform: scale(0.9); /* Adjust scaling factor as needed */
+      bottom: 50px; 
+      right: 50px;  
+      transform: scale(0.9); 
+      z-index: 1;
     }
   }
   
@@ -100,7 +106,10 @@
     }
   
     .home-contact-me {
-      transform: scale(0.95); /* Adjust scaling factor as needed */
+      bottom: 50px; 
+      right: 50px;  
+      transform: scale(0.95); 
+      z-index: 1;
     }
   }
   

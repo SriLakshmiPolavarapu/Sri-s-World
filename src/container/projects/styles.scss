@@ -38,11 +38,11 @@
   font-size: 2rem;
 }
 
-/* Media query for small screens */
-@media (max-width: 720px) {
-  .project {
-    padding: 1rem;
-    font-size: 1.5rem;
+@media (max-width: 760px) {
+  .projects-container {
+    transform: scale(0.9); 
+    transform-origin: top left;
+    width: 100%;
   }
 
   .project h2 {
