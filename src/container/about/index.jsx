@@ -32,9 +32,9 @@ const About = () => {
           <p>I'm currently exploring possible paths in Software Engineering, and Data Science. I'm working on different projects to further develop my skills. </p>
 
 <br></br>
-          <p>Feel free to connect with me out on LinkedIn or GitHub to view my projects.</p>
+          <p className='link-color'>Feel free to connect with me out on <a href="https://www.linkedin.com/in/sri-lakshmi-polavarapu/" target="_blank">LinkedIn</a> or <a href="https://github.com/SriLakshmiPolavarapu" target="_blank">GitHub</a> to view my projects.</p>
+        </div>
       </div>
-    </div>
     </div>
   );
 };

@@ -3,6 +3,7 @@
   --main-color: #000000;
   --navbar-background-color: rgb(128, 126, 126);
   --subtext-color: #ffffff;
+  --link-color: #6c496c;
 }
 
 * {
@@ -98,4 +99,9 @@ body {
     font-size: 2rem;        
     z-index: 1;
   }
+}
+
+.link-color
+{
+  color: var(--link-color)
 }
