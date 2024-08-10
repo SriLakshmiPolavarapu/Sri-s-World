@@ -7,10 +7,9 @@
 
 .project {
   color: var(--main-color);
-  padding: 1rem;
+  padding: 20px;
   margin-bottom: 1rem;
   border-radius: 5px;
-  padding: 20px;
 }
 
 .project h2 {
@@ -40,9 +39,13 @@
 
 @media (max-width: 760px) {
   .projects-container {
+    padding: 0 10px; /* Add padding for better alignment */
+  }
+
+  .project {
     transform: scale(0.9); 
     transform-origin: top left;
-    width: 100%;
+    margin: 0 0 20px 0; /* Ensure there's spacing between projects */
   }
 
   .project h2 {
@@ -55,5 +58,27 @@
 
   .project a {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .projects-container {
+    padding: 0 5px; /* Reduce padding for very small screens */
+  }
+
+  .project {
+    transform: scale(0.85); /* Further scale down for very small screens */
+  }
+
+  .project h2 {
+    font-size: 1.8rem;
+  }
+
+  .project p {
+    font-size: 1.4rem;
+  }
+
+  .project a {
+    font-size: 1.4rem;
   }
 }

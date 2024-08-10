@@ -31,7 +31,7 @@ const Home = () => {
           duration={1.5}
           delay={1}
           start={{ transform: 'translateX(500px)' }}
-          end={{ transform: 'translateX(-5px)' }}
+          end={{ transform: 'translateX(1px)' }}
         >
           <div className="home-contact-me">
             <button onClick={handleNavigateToContactMePage}> Contact Info</button>   
