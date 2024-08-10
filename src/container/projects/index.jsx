@@ -3,11 +3,17 @@ import PageHeaderContent from '../../components/pageHeaderContent';
 import './styles.scss';
 
 const projects = [
+  {
+    title: 'Recipe Generator', 
+    description: 'A Web Application created using Flask and Generative Pre-trained Transformer-2 (GPT-2), allowing users to input the data (ingredients) and receive recipes. \nUtilized the Hugging Face pipeline API to generate contextually relevant recipes based on user input. \nIntegrated Edamam API for displaying the recipes and GPT-2 for generating additional recipes. Also provided detailed recipes when given a specific dish name. \nEmployed the GPT-2 Tokenizer to preprocess the input data and convert it into a format suitable for the model. \nSuccessfully combined external API and NLP techniques into an application.',
+    link: 'https://github.com/SriLakshmiPolavarapu/generate-recipe',
+    skills: ['Python (Flask)','Natural Language Processing','Large Language Model','Frontend Web Development','Reactjs', 'HTML', 'CSS' , 'Javascript','API']
+  },
   { 
     title: 'Goal Getter Dashboard', 
     description: 'A Frontend Web Development project using Reactjs with Vite as development environment. Utilized Axios for API interactions of weather, location and quotes. \nThis dashboard generates random quotes to inspire users and provides a 7-day weather forecast. Displays air quality information and UV Index. \nFeatures a map to calculate distance and travel time between locations. \nIt also has a feature to select the exercise mode (walk/run/jog/cycle).',
     link: 'https://github.com/SriLakshmiPolavarapu/GoalGetter_Dashboard',
-    skills: ['Frontend Web Development','Reactjs', 'HTML', 'CSS' , 'Javascript']
+    skills: ['Frontend Web Development','Reactjs', 'HTML', 'CSS' , 'Javascript', 'API']
   },
   { 
     title: 'Color Transfer Between Images', 
@@ -45,8 +51,6 @@ const projects = [
     link: 'https://github.com/SriLakshmiPolavarapu/Hotel_Management_System',
     skills: ['Web Development', 'HTML', 'CSS', 'Javascript', 'PHP', 'AWS', 'Heroku']
   }
-
-
 ];
 
 const Projects = () => {

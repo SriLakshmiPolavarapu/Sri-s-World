@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { HiX } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './styles.scss';
 
 const data = [
@@ -32,7 +34,7 @@ const Navbar = () => {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-container-logo'>
-            {/* <FaReact fontSize={30} /> */}
+            {/* Add your logo or leave this empty */}
           </Link>
         </div>
 
@@ -49,6 +51,15 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        <div className='navbar-social-icons'>
+          <a href='https://github.com/' target='_blank' rel='noopener noreferrer' className='icon'>
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a href='https://linkedin.com/' target='_blank' rel='noopener noreferrer' className='icon'>
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+        </div>
 
         <div className='nav-icon' onClick={handleToggleIcon}>
           {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}

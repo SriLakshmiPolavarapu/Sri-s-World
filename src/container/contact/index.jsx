@@ -59,7 +59,7 @@ const Contact = () => {
 
                 <button type='submit'>Send Message</button>
             </form>
-            {/* Social Icons */}
+            {/* Social Icons 
             <div className='social-icons'>
                 <a href='https://github.com/' target='_blank' rel='noopener noreferrer' className='icon'>
                     <FontAwesomeIcon icon={faGithub} />
@@ -67,7 +67,8 @@ const Contact = () => {
                 <a href='https://linkedin.com/' target='_blank' rel='noopener noreferrer' className='icon'>
                     <FontAwesomeIcon icon={faLinkedin} />
                 </a>
-            </div>
+             </div>*/}
+
         </div>
     );
 };

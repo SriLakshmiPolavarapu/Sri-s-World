@@ -44,7 +44,7 @@ form .input-box{
     width: 100%;
     padding: 10px;
     font-size: 1.5rem;
-    background-color: rgb(192, 191, 191);
+    background-color: rgb(188, 180, 180);
 }
 
 .input-box .field-mess::placeholder{
@@ -82,10 +82,10 @@ form button{
     transition: color 0.3s ease;
 
     &:hover {
-        color: #0762C8; // LinkedIn brand color on hover
+        color: #0762C8; 
     }
 
     &:first-child:hover {
-        color: #f9f6f6; // GitHub brand color on hover
+        color: #f9f6f6; 
     }
 }

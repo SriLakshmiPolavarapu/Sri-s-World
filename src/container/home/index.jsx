@@ -1,43 +1,46 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './styles.scss';
-import {useNavigate} from 'react-router-dom';
-import {Animate} from 'react-simple-animate';
+import { useNavigate } from 'react-router-dom';
+import { Animate } from 'react-simple-animate';
 
-const Home = () =>
-{
-    const navigate = useNavigate();
-    const handleNavigateToContactMePage = () => {
-        navigate("/contact");
-    };
+const Home = () => {
+  useEffect(() => {
+    console.log("Home component mounted");
+  }, []);
 
-    return(
-        <section id="home" className='home'>
-            <div className='home-text-wrapper'>
-                <h1> Hello! 
-                <br />
-                I'm Sri Lakshmi Polavarapu
-                <br />
-                Student at Portland State University
-                </h1>
-            </div>
+  const navigate = useNavigate();
+  const handleNavigateToContactMePage = () => {
+    navigate("/contact");
+  };
 
-            <Animate
-            play
-            duration = {1.5}
-            delay = {1}
-            start = {{
-                transform : 'translateX(200px)'
-            }}
-            end = {{
-                transform : 'translateX(100px)'
-            }}>
-            <div className="home-contact-me">
-             <button onClick={handleNavigateToContactMePage}> Contact Info</button>   
-            </div>
-            </Animate>
+  return (
+    <section id="home" className='home'>
+      <div className='home-text-wrapper'>
+        <h1>
+          Hello! 
+          <br />
+          I'm Sri Lakshmi Polavarapu
+          <br />
+          Student at Portland State University
+        </h1>
+      </div>
 
-        </section>
-    );
+      <Animate
+        play
+        duration={1.5}
+        delay={1}
+        start={{
+          transform: 'translateX(200px)'
+        }}
+        end={{
+          transform: 'translateX(100px)'
+        }}>
+        <div className="home-contact-me">
+          <button onClick={handleNavigateToContactMePage}> Contact Info</button>   
+        </div>
+      </Animate>
+    </section>
+  );
 };
 
 export default Home;
