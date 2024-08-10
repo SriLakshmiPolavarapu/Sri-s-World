@@ -5,7 +5,7 @@ import './styles.scss';
 const Experience = () => {
     return (
         <section id='experience' className='experience'> 
-            <PageHeaderContent headerText="Professional Experience" />
+            <PageHeaderContent headerText="Experience" />
             <div className='experience-info'>
                 <h2 className='experience-role'>Software Engineering Intern - Unity Programmer</h2>
                 <h2 className='experience-company-name'>Quero India Pvt Ltd</h2>
@@ -30,12 +30,15 @@ const Experience = () => {
             <br />
 
             <div className='extra-activities'>
-                <PageHeaderContent headerText="Extracurricular Activities" />
+                <PageHeaderContent headerText="Activities" />
                 <ul className='extracurricular-list'>
+                    <div>
                         <h2 className='experience-role'>1. Campus Student Ambassador @ PSU</h2>
-                        <i className='experience-date'>August 2024</i>
+                        <i className='experience-date'>August 2024</i></div>
+                        <div><br></br><br></br>
                         <h2 className='experience-role'>2. Student Operations Team Member @ PSU</h2>
                         <i className='experience-date'>October 2023 - Present</i>
+                        </div><br></br><br></br>
                         <h2 className='experience-role'>3. Joint Secretary of Rotaract Club @ VIT</h2>
                         <i className='experience-date'>July 2019 - May 2020</i>
                 </ul>
