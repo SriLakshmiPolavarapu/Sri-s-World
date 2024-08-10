@@ -1,38 +1,39 @@
-:root{
-    --backgroung-color : #937993;
-    --main-color : #000000;
-    --navbar-background-color : rgb(128, 126, 126);
-    --subtext-color : #ffffff;
+:root {
+    --background-color: #937993;
+    --main-color: #000000;
+    --navbar-background-color: rgb(128, 126, 126);
+    --subtext-color: #ffffff;
   }
-
-* {
+  
+  * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-}
-
-html, body, #root {
-    height: 100%;
-}
+  }
   
-.home{
+  html, body, #root {
+    height: 100%;
+  }
+  
+  .home {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-}
-
-.home-text-wrapper{
+    overflow: hidden; /* Ensure no overflow beyond viewport */
+  }
+  
+  .home-text-wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-}
-
-h1{
-    margin: 0px;
+  }
+  
+  h1 {
+    margin: 0;
     line-height: 10rem;
     font-size: 5rem;
     font-weight: 500;
@@ -42,18 +43,20 @@ h1{
     overflow: hidden;
     white-space: nowrap;
     animation: typingEffectAnimation 1.5s steps(50, end);
-}
-
-.home-contact-me{
+  }
+  
+  .home-contact-me {
     margin-top: 500px;
     align-items: center;
     display: flex;
     justify-content: center;
-    right: 5px;
-    left: 15px;
-}
-
-.home-contact-me button {
+    position: absolute; /* Adjust positioning to ensure it remains visible */
+    bottom: 10%; /* Adjust based on preference */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+  }
+  
+  .home-contact-me button {
     padding: 10px 20px;
     background-color: var(--main-color);
     color: var(--subtext-color);
@@ -67,39 +70,46 @@ h1{
   .home-contact-me button:hover {
     background-color: var(--navbar-background-color);
   }
-
-@media only screen and (max-width : 550px)
-{
-    .home-text-wrapper h1{
-        font-size: 2rem;
-        line-height: 4rem;
+  
+  @media only screen and (max-width: 550px) {
+    .home-text-wrapper h1 {
+      font-size: 2rem;
+      line-height: 4rem;
     }
-}
-
-@media only screen and (min-width : 551px) and (max-width : 768px)
-{
-    .home-text-wrapper h1{
-        font-size: 3rem;
-        line-height: 5rem;
+  
+    .home-contact-me {
+      transform: scale(0.9); /* Adjust scaling factor as needed */
     }
-}
-
-@media only screen and (min-width : 769px) and (max-width : 990px)
-{
-    .home-text-wrapper h1{
-        font-size: 4rem;
-        line-height: 6rem;
+  }
+  
+  @media only screen and (min-width: 551px) and (max-width: 768px) {
+    .home-text-wrapper h1 {
+      font-size: 3rem;
+      line-height: 5rem;
     }
-}
-
-
-@keyframes typingEffectAnimation{
-    from{
-        width: 0;
+  
+    .home-contact-me {
+      transform: scale(0.9); /* Adjust scaling factor as needed */
     }
-
-    to{
-        width: 100%;
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 990px) {
+    .home-text-wrapper h1 {
+      font-size: 4rem;
+      line-height: 6rem;
     }
-}
-
+  
+    .home-contact-me {
+      transform: scale(0.95); /* Adjust scaling factor as needed */
+    }
+  }
+  
+  @keyframes typingEffectAnimation {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
