@@ -50,10 +50,10 @@ const Navbar = () => {
         </ul>
 
         <div className='navbar-social-icons'>
-          <a href='https://github.com/' target='_blank' rel='noopener noreferrer' className='icon'>
+          <a href='https://github.com/SriLakshmiPolavarapu' target='_blank'className='icon'>
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href='https://linkedin.com/' target='_blank' rel='noopener noreferrer' className='icon'>
+          <a href='https://www.linkedin.com/in/sri-lakshmi-polavarapu/' target='_blank' className='icon'>
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </div>
