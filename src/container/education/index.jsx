@@ -4,7 +4,7 @@ import PageHeaderContent from '../../components/pageHeaderContent';
 
 const educationData = [
   {
-    institution: "Portland State University, Portland, OR",
+    institution: "Portland State University, Portland, OR, USA",
     degree: "Master's in Computer Science",
     startDate: "September 2023",
     endDate: "June 2025",
@@ -23,6 +23,9 @@ const educationData = [
     startDate: "June 2016",
     endDate: "May 2018",
     percentage: "9.5 / 10"
+  },
+  {
+    institution: "St. Joseph Public School (ICSE), Hyderabad, India",
   }
 ];
 

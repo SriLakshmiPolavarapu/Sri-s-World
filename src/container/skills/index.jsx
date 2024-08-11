@@ -4,7 +4,7 @@ import './styles.scss';
 
 const skillsData = {
   "Programming Languages": ["Python", "Java", "R", "MATLAB", "JavaScript", "C#", "PHP"],
-  "Web Development": ["HTML", "CSS", "jQuery", "React", "Bootstrap", "Node.js"],
+  "Web Development": ["HTML", "CSS", "jQuery", "React", "Node.js"],
   "Cloud Platforms": ["AWS", "Google Cloud Platform", "Microsoft Azure", "Heroku"],
   "Database Management": ["MySQL", "PostgreSQL", "Hive", "MongoDB"],
   "Machine Learning & Data Science": ["PyTorch", "TensorFlow", "Keras", "NumPy", "Pandas"],
