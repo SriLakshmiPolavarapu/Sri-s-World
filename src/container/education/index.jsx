@@ -8,14 +8,14 @@ const educationData = [
     degree: "Master's in Computer Science",
     startDate: "September 2023",
     endDate: "June 2025",
-    percentage: "3.7 / 4"
+    percentage: "3.8 / 4"
   },
   {
     institution: "Vellore Institute of Technology, Chennai, India",
-    degree: "M.Tech Integrated Software Engineering",
+    degree: "Master of Technology,  Software Engineering",
     startDate: "June 2018",
     endDate: "May 2023",
-    percentage: "3.9 / 4"
+    percentage: "8.6 / 10"
   },
   {
     institution: "Narayana Educational Institute, Hyderabad, India",
