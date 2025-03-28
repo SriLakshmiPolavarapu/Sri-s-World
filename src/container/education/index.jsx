@@ -9,16 +9,14 @@ const educationData = [
     startDate: "September 2023",
     endDate: "June 2025",
     percentage: "3.8 / 4",
-
     coursework: "Machine Learning, Artificial Intelligence, Computer Vision, Code Large Language Models, Internetworking Protocols, Data Engineering, Database Management System, Code Reading and Review, Algorithm Design and Analysis, Software Engineering, Operating Systems, Intro to Web Development, Frontend Web Development, Voice Assistance",  
   },
   {
     institution: "Vellore Institute of Technology, Chennai, India",
-    degree: "Master of Technology,  Software Engineering",
+    degree: "Master of Technology, Software Engineering",
     startDate: "June 2018",
     endDate: "May 2023",
     percentage: "8.6 / 10",
-
     coursework: "Software Engineering, Programming in Java, Web Technologies, Game Programming, Artificial Intelligence, Machine Learning, Data Mining, Data Analytics, Big Data Technologies, Operating Systems, Computer Networks, Cloud Computing, Information and System Security, Software Testing, Software Design and Development Project, Human-Computer Interaction, Data Structures and Algorithms, Theory of Computation, Database Management Systems, Foundations of Electrical and Electronics Engineering."
   },
   {
@@ -36,25 +34,28 @@ const educationData = [
 const Timeline = () => {
   return (
     <section id='education' className='education'>
-    <PageHeaderContent headerText="Education" />
-    <div className="timeline">
-      {educationData.map((item, index) => (
-        <div key={index} className="timeline-item">
-          <div className="timeline-item-content">
-            <h2 className='institute'>{item.institution}</h2>
-            <h3 className='degree'>{item.degree}</h3>
-            <i className="date">{item.startDate} - {item.endDate}</i>
-            <p className='percentage'>{item.percentage}</p>
-
-            <p classname='coursework'>{item.coursework}</p>
-            <span className="circle" />
+      <PageHeaderContent headerText="Education" />
+      <div className="timeline">
+        {educationData.map((item, index) => (
+          <div key={index} className="timeline-item">
+            <div className="timeline-item-content">
+              <h2 className='institute'>{item.institution}</h2>
+              <h3 className='degree'>{item.degree}</h3>
+              <i className="date">{item.startDate} - {item.endDate}</i>
+              <p className='percentage'>{item.percentage}</p>
+              {item.coursework && (
+                <>
+                  <br /><br />
+                  <p className='coursework'>Coursework: {item.coursework}</p>
+                </>
+              )}
+              <span className="circle" />
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
     </section>
   );
 };
 
 export default Timeline;
-
