@@ -31,10 +31,20 @@ const educationData = [
   }
 ];
 
+const certifications = [
+  "Agentic AI for Developers: Concepts and Application for Enterprises - LinkedIn",
+  "Microsoft Azure AI Essentials Professional Certificate - Microsoft and LinkedIn",
+  "GenerativeAI - LinkedIn",
+  "Docker Foundations Professional Certificate - LinkedIn",
+  "Java Programming - Spoken Tutorial at IIT Bombay",
+  "Artificial Intelligence on Microsoft Azure - Coursera",
+  "MySQL certification - Spoken Tutorial at IIT Bombay"
+];
+
 const Timeline = () => {
   return (
     <section id='education' className='education'>
-      <PageHeaderContent headerText="Education" />
+      <PageHeaderContent headerText="Education & Certifications" />
       <div className="timeline">
         {educationData.map((item, index) => (
           <div key={index} className="timeline-item">
@@ -53,6 +63,25 @@ const Timeline = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      <PageHeaderContent headerText="Certifications" />
+      <div className="certifications-list">
+        <br></br>
+        <ul>
+          {certifications.map((cert, index) => {
+            const [certificate, issuer] = cert.split(', ');
+            return (
+              <li key={`cert-${index}`} className="certification-item">
+                <div className="certification-content">
+                  <h3 className='certificate-name'>{certificate}</h3>
+                  <p className='issuer'>{issuer}</p>
+                  <br></br>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </section>
   );

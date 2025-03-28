@@ -54,3 +54,22 @@
   left: -30px;
 }
 
+.certifications-list ul {
+  list-style: none;
+  padding-left: 40px;
+}
+
+.certifications-list li {
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.certifications-list li::before {
+  content: "•";
+  position: absolute;
+  left: -20px;
+  color: var(--main-color);
+  font-size: 2rem;
+}
