@@ -3,14 +3,14 @@ import PageHeaderContent from '../../components/pageHeaderContent';
 import './styles.scss';
 
 const skillsData = {
-  "Programming Languages": ["Python", "Java", "R", "MATLAB", "JavaScript", "C#", "PHP"],
+  "Languages": ["Java", "Python", "R", "MATLAB", "JavaScript", "C#", "PHP"],
   "Web Development": ["HTML", "CSS", "jQuery", "React", "Node.js"],
   "Cloud Platforms": ["AWS", "Google Cloud Platform", "Microsoft Azure", "Heroku"],
-  "Database Management": ["MySQL", "PostgreSQL", "Hive", "MongoDB"],
-  "Machine Learning & Data Science": ["PyTorch", "TensorFlow", "Keras", "NumPy", "Pandas"],
-  "DevOps": ["Jenkins", "Kubernetes", "Docker", "Git Version Control"],
-  "Tools": ["ChromeDev Tools", "Wireshark", "Tableau", "Unity3D"],
-  "Agile Methodologies & Testing": ["Agile methodologies", "Unit Testing"],
+  "Database Management": ["MySQL", "PostgreSQL", "Hive", "Dbeaver", "MySQL Workbench"],
+  "AI/ML": ["PyTorch", "TensorFlow", "Keras", "NumPy", "Pandas", "OpenCV", "Matplotlib", "Hugging Face"],
+  "DevOps": ["Jenkins", "Kubernetes", "Docker", "CI/CD", "Git Version Control"],
+  "Tools": ["ChromeDev Tools", "Wireshark", "Tableau", "Power BI", "Unity3D"],
+  "Agile Methodologies & Testing": ["Agile methodologies", "SDLC", "Unit Testing", "System Design"],
   "Networking": ["Networking Protocols", "TCP/IP", "UDP", "DNS"],
   "Operating Systems" : ["Windows", "MacOS"]
 };

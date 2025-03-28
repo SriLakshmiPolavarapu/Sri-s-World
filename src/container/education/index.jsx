@@ -8,14 +8,18 @@ const educationData = [
     degree: "Master's in Computer Science",
     startDate: "September 2023",
     endDate: "June 2025",
-    percentage: "3.8 / 4"
+    percentage: "3.8 / 4",
+
+    coursework: "Machine Learning, Artificial Intelligence, Computer Vision, Code Large Language Models, Internetworking Protocols, Data Engineering, Database Management System, Code Reading and Review, Algorithm Design and Analysis, Software Engineering, Operating Systems, Intro to Web Development, Frontend Web Development, Voice Assistance",  
   },
   {
     institution: "Vellore Institute of Technology, Chennai, India",
     degree: "Master of Technology,  Software Engineering",
     startDate: "June 2018",
     endDate: "May 2023",
-    percentage: "8.6 / 10"
+    percentage: "8.6 / 10",
+
+    coursework: "Software Engineering, Programming in Java, Web Technologies, Game Programming, Artificial Intelligence, Machine Learning, Data Mining, Data Analytics, Big Data Technologies, Operating Systems, Computer Networks, Cloud Computing, Information and System Security, Software Testing, Software Design and Development Project, Human-Computer Interaction, Data Structures and Algorithms, Theory of Computation, Database Management Systems, Foundations of Electrical and Electronics Engineering."
   },
   {
     institution: "Narayana Educational Institute, Hyderabad, India",
@@ -41,6 +45,8 @@ const Timeline = () => {
             <h3 className='degree'>{item.degree}</h3>
             <i className="date">{item.startDate} - {item.endDate}</i>
             <p className='percentage'>{item.percentage}</p>
+
+            <p classname='coursework'>{item.coursework}</p>
             <span className="circle" />
           </div>
         </div>
