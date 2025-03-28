@@ -44,7 +44,7 @@ const certifications = [
 const Timeline = () => {
   return (
     <section id='education' className='education'>
-      <PageHeaderContent headerText="Education & Certifications" />
+      <PageHeaderContent headerText="Education" />
       <div className="timeline">
         {educationData.map((item, index) => (
           <div key={index} className="timeline-item">
