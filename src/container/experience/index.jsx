@@ -13,6 +13,7 @@ const Experience = () => {
                 <i className='experience-date'>September 2024 - Present</i>
                 <ul>
                     <p className='experience-responsibility'>
+                        <li>Student Ambassadors (2024-2025) : <a href="https://www.pdx.edu/visit/meet-student-ambassadors" target="_blank"> https://www.pdx.edu/visit/meet-student-ambassadors </a></li>
                         <li>Handle incoming calls using AWS Amazon Connect, providing timely and accurate answers to admissions inquiries.</li>
                         <li>Collaborated with cross-functional teams to solve technical issues and enhance overall operational effectiveness.</li>
                     </p>
